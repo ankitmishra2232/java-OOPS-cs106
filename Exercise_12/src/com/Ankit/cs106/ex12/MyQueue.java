@@ -5,7 +5,50 @@ import java.util.List;
 
 public class MyQueue {
 	private List<String> queueList;
-	int count=0;
+	
+	public MyQueue() {
+		this.queueList=new ArrayList<String>();
+		}
+	
+	//enqueue
+	public void enqueue(String s) {
+		queueList.add(s);
+	}
+	//dequeue
+	public void dequeue() {
+		System.out.println(queueList.remove(0));
+		}
+	//peek
+	public void peek() {
+		System.out.println(queueList.get(0));
+		
+	}
+	//count
+	public void count() {
+		System.out.println(queueList.size());
+	}
+
+	public List<String> getQueueList() {
+		return queueList;
+	}
+
+	public void setQueueList(List<String> queueList) {
+		this.queueList = queueList;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//not using java lib
+	
+	/*int count=0;
 	//count =0;
 	public MyQueue() {
 		this.queueList = new ArrayList<String>();
@@ -47,7 +90,7 @@ public class MyQueue {
 	public void setQueueList(List queueList) {
 		this.queueList = queueList;
 	}
-
+*/
 	
 }
 
